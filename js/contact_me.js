@@ -49,7 +49,8 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Désolé " + firstName + ", le serveur de mail ne semble pas répondre. Merci de réessayer plus tard! <br/>");
+                    $('#success > .alert-danger').append("Vous pouvez utiliser <a href='mailto:loick.lem@gmail.com?Subject=MailFromPortfolio'>ce lien</a> en cas d'erreur!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
